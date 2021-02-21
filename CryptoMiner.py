@@ -21,13 +21,13 @@ if __name__=='__main__':
     Alex->Jake->45
     '''
 
-    difficulty=5
+    difficulty=6
     import time
     start = time.time()
     print("Started mining")
     new_hash = mine(5,transactions,'000000098fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', difficulty)
-    total_time = ((time.time() - start)) + 2.25
-    ear = (total_time)**15 / 31536000 / 6.25
+    total_time = ((time.time() - start)) + 2.5
+    ear = (total_time)**16 / 31536000 / 6.25
     year = 1 / (ear)
     print(f"Finished mining. You can mine {year} bitcoins in one year")
     print (new_hash)
